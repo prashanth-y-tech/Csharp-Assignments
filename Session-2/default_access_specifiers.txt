@@ -1,0 +1,10 @@
+Class - internal
+Constructor - private
+Default Constructor - public
+Destructor - Empty
+Namespace - public
+Function/Method - private
+Variable - private
+enum - public
+struct - internal
+interface - internal
