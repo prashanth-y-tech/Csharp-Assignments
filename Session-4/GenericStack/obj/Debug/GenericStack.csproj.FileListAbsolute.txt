@@ -1,0 +1,8 @@
+C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\bin\Debug\GenericStack.exe.config
+C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\bin\Debug\GenericStack.exe
+C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\bin\Debug\GenericStack.pdb
+C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\obj\Debug\GenericStack.csproj.AssemblyReference.cache
+C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\obj\Debug\GenericStack.csproj.SuggestedBindingRedirects.cache
+C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\obj\Debug\GenericStack.csproj.CoreCompileInputs.cache
+C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\obj\Debug\GenericStack.exe
+C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\obj\Debug\GenericStack.pdb
