@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CurrencyConverter",
+    "\\CurrencyConverter\\bin",
+    "\\CurrencyExchangeApp",
+    "\\CurrencyExchangeApp\\bin"
   ],
   "PreviewInSolutionExplorer": false
 }
