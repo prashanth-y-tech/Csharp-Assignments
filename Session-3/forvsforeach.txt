@@ -1,0 +1,11 @@
+Generally speaking, for loops are faster when compared to foreach loops in some scenarios when we want to iterate on an array and access the items in it only once the for loop works faster when compared to foreach loop.
+
+Foreach loops are faster than for loops when we iterate over a list.
+
+When we want to access the items of a list or array more than once then foreach loops are faster than for loops that’s because for loops use only two local variables whereas foreach loops use 4 local variables but when want to access the elements of the list or array more than once we would be needing extra variables in for loop but as we already have a local variable assigned with the value of list element, we won’t be needing another variable or at least as many as we used in a for loop. 
+
+When we want to iterate on a linked list a foreach loop would be faster than a for loop as indexing on a linked list makes it costlier for a for loop.
+
+When we want to iterate over a string character by character then for loop is faster than for each loop.
+
+For each loops are faster when compared to for loops when we are dealing with arrays of large size.
