@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: GenericStack.Stack`1
-// Assembly: GenericStack, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 9A690CBD-D02B-4FA1-971F-BFDFF830492D
-// Assembly location: C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\bin\Debug\GenericStack.exe
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

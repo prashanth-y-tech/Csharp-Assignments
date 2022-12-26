@@ -11,6 +11,8 @@
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <FileAlignment>512</FileAlignment>
     <RootNamespace>BubbleSort</RootNamespace>
+	  <Nullable>enable</Nullable>
+	  <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

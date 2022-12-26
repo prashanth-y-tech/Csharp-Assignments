@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: Extension]
+
 [assembly: AssemblyTitle("BubbleSort")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]

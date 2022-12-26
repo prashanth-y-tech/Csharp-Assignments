@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: GenericStack.Program
-// Assembly: GenericStack, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 9A690CBD-D02B-4FA1-971F-BFDFF830492D
-// Assembly location: C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\GenericStack\bin\Debug\GenericStack.exe
-
-namespace GenericStack
+﻿namespace GenericStack
 {
   internal class Program
   {
@@ -18,6 +12,7 @@ namespace GenericStack
       stack.PushElement("e");
       stack.PopElement();
       stack.PopElement();
+      stack.PushElement("f");
       stack.DisplayElements();
     }
   }

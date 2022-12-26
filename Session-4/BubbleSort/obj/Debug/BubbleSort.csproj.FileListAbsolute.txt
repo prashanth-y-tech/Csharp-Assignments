@@ -1,4 +1,3 @@
-C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\BubbleSort\bin\Debug\BubbleSort.exe.config
 C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\BubbleSort\bin\Debug\BubbleSort.exe
 C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\BubbleSort\bin\Debug\BubbleSort.pdb
 C:\Users\prashanth yarram\OneDrive\Desktop\Technovert\C#-Training\C#-Assignments\Session-4\BubbleSort\obj\Debug\BubbleSort.csproj.AssemblyReference.cache
