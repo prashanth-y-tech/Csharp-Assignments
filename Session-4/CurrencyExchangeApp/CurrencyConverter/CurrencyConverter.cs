@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Configuration;
 using RestSharp;
 using System.Collections.Generic;
 using System.IO;
@@ -17,7 +18,8 @@ namespace CurrencyConverter
                 request.AddHeader("apikey", "NKJlyNE9umLraoNvP87N7W9v6NNePbI8");
                 ApiResponse apiResponse = JsonConvert.DeserializeObject<ApiResponse>(client.Get(request).Content);
                 apiResponse.quotes.Add("timestamp", apiResponse.timestamp);
-                File.WriteAllText("C:\\Users\\prashanth yarram\\OneDrive\\Desktop\\sample.txt", JsonConvert.SerializeObject((object)apiResponse.quotes));
+                string path = System.Configuration.ConfigurationManager.AppSettings["path"];
+                File.WriteAllText(path, JsonConvert.SerializeObject((object)apiResponse.quotes));
             }
             catch(Exception e) {
                 throw e.InnerException;

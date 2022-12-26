@@ -18,6 +18,7 @@ namespace GenericStack
     public void DisplayElements()
     {
       StringBuilder stringBuilder = new StringBuilder();
+       _data.Reverse();
       foreach (T obj in this._data)
       {
         stringBuilder.Append(obj.ToString());
