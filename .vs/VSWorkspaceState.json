@@ -1,10 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Session-3",
     "\\Session-3\\CurrencyExchangeApp",
-    "\\Session-3\\CurrencyExchangeApp\\CurrencyExchangeApp"
+    "\\Session-3\\CurrencyExchangeApp\\CurrencyExchangeApp",
+    "\\Session-4",
+    "\\Session-4\\BubbleSort",
+    "\\Session-4\\CurrencyExchangeApp",
+    "\\Session-4\\CurrencyExchangeApp\\CurrencyConverter",
+    "\\Session-4\\CurrencyExchangeApp\\CurrencyExchangeApp",
+    "\\Session-4\\GenericStack",
+    "\\Session-4\\GenericStack\\bin",
+    "\\Session-4\\GenericStack\\bin\\Debug"
   ],
-  "SelectedNode": "\\Session-3\\CurrencyExchangeApp\\CurrencyExchangeApp\\Program.cs",
+  "SelectedNode": "\\Session-4\\GenericStack\\bin\\Debug\\GenericStack.exe",
   "PreviewInSolutionExplorer": false
 }
