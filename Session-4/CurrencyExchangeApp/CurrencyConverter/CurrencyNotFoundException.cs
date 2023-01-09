@@ -7,7 +7,6 @@ namespace CurrencyExchange
         public CurrrencyNotFoundException()
         {
         }
-
         public CurrrencyNotFoundException(string message)
           : base(message)
         {

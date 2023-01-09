@@ -11,7 +11,6 @@ namespace CurrencyExchange
         public object? error { get; set; }
 #nullable disable
         public bool success { get; set; }
-
         public double timestamp { get; set; }
     }
 }

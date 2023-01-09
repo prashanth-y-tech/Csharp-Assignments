@@ -20,7 +20,6 @@ namespace CurrencyExchange
                 ApiResponse apiResponse = JsonConvert.DeserializeObject<ApiResponse>(client.Get(request).Content);
                 apiResponse.quotes.Add("timestamp", apiResponse.timestamp);
                 return apiResponse;
-                
             }
             catch(Exception e) {
                 throw e.InnerException;
