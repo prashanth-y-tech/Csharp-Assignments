@@ -5,9 +5,9 @@ using System.Text;
 
 namespace GenericStack
 {
-  internal class Stack<T>
+  public class Stack<T>
   {
-    private List<T> _data = (List<T>) null;
+    private List<T> _data = null;
 
     public Stack() => this._data = new List<T>();
 
@@ -15,17 +15,16 @@ namespace GenericStack
 
     public void PopElement() => this._data.RemoveAt(this._data.Count<T>() - 1);
 
-    public void DisplayElements()
+    public string GetData()
     {
       StringBuilder stringBuilder = new StringBuilder();
-       _data.Reverse();
-      foreach (T obj in this._data)
+       
+      for (int i= _data.Count() - 1; i>=0;i--)
       {
-        stringBuilder.Append(obj.ToString());
+        stringBuilder.Append(_data[i].ToString());
         stringBuilder.Append(',');
       }
-      Console.Write(stringBuilder.ToString());
-      Console.WriteLine();
+            return stringBuilder.ToString();
     }
   }
 }

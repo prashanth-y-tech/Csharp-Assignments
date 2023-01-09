@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CurrencyConverter
+namespace CurrencyExchange
 {
     public class CurrrencyNotFoundException : Exception
     {

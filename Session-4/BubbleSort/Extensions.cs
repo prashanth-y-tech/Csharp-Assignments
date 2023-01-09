@@ -12,8 +12,8 @@ namespace BubbleSort.Extensions
                 bool flag = false;
                 if (array.Length == 0)
                 {
-                    Console.WriteLine("Empty array passed");
-                    flag = true;
+   
+                    return;
                 }
                 int num1 = ((IEnumerable<T>)array).Count() - 1;
                 while (!flag)

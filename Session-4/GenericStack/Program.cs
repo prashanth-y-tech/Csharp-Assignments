@@ -1,4 +1,6 @@
-﻿namespace GenericStack
+﻿using System;
+
+namespace GenericStack
 {
   internal class Program
   {
@@ -13,7 +15,8 @@
       stack.PopElement();
       stack.PopElement();
       stack.PushElement("f");
-      stack.DisplayElements();
+      Console.WriteLine(stack.GetData());
+    
     }
   }
 }

@@ -2,9 +2,9 @@
 
 
 
-namespace CurrencyConverter
+namespace CurrencyExchange
 {
-    internal class ApiResponse
+    public class ApiResponse
     {
         public Dictionary<string, double> quotes { get; set; }
 #nullable enable
