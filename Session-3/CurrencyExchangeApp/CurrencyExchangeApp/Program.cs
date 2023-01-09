@@ -24,6 +24,7 @@ namespace CurrencyExchangeApp
                     fromCurrency = args[0];
                     toCurrency = args[1];
                     Currencyvalue = Convert.ToDouble(args[2]);
+
                 }
                 catch (FormatException)
                 {
@@ -36,6 +37,7 @@ namespace CurrencyExchangeApp
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
+
                 }
 
             }

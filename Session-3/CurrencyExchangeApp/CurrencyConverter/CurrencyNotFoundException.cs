@@ -11,6 +11,7 @@ namespace CurrencyConverter
         public CurrrencyNotFoundException(string message)
           : base(message)
         {
+
         }
     }
 }
