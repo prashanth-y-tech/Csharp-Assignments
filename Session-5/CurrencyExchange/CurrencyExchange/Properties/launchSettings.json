@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CurrencyExchangeApp": {
+      "commandName": "Project",
+      "commandLineArgs": "\"USD\" \"INR\" 1"
+    }
+  }
+}
