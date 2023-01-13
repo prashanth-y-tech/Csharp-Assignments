@@ -2,21 +2,27 @@
 
 namespace GenericStack
 {
-  internal class Program
-  {
-    private static void Main(string[] args)
+    internal class Program
     {
-      Stack<string> stack = new Stack<string>();
-      stack.PushElement("a");
-      stack.PushElement("b");
-      stack.PushElement("c");
-      stack.PushElement("d");
-      stack.PushElement("e");
-      stack.PopElement();
-      stack.PopElement();
-      stack.PushElement("f");
-      Console.WriteLine(stack.GetData());
-    
+        private static void Main(string[] args)
+        {
+            Stack<string> stack = new Stack<string>();
+            try
+            {
+                stack.Push("a");
+                stack.Push("b");
+                stack.Push("c");
+                stack.Push("d");
+                stack.Push("e");
+                stack.Pop();
+                stack.Pop();
+                stack.Push("f");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine(stack.GetData());
+        }
     }
-  }
 }
