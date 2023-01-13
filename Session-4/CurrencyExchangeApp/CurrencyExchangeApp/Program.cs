@@ -1,49 +1,40 @@
 ﻿using CurrencyExchange;
 using System;
-using System.Linq;
 
 namespace CurrencyExchangeApp
 {
-   internal class Program
+    internal class Program
     {
         private static void Main(string[] args)
         {
-            if (args.Count() > 0)
-            {
-                if (args[0].Count<char>() > 3 || args[1].Count<char>() > 3)
-                {
-                    Console.WriteLine("Enter a valid Currency[Ex : USD, INR , AUD]");
-                }
-                else
-                {
-                    string toCurrency = "";
-                    string fromCurrency = "";
-                    double Currencyvalue = 0.0;
-                    
-                    try
-                    {
-                        fromCurrency = args[0];
-                        toCurrency = args[1];
-                        Currencyvalue = Convert.ToDouble(args[2]);
-                    }
-                    catch (FormatException)
-                    {
-                        Console.WriteLine("Enter a valid input!");
-                    }
-                    try
-                    {
-                        Console.WriteLine(string.Format("{0} {1} is equavalent to {2} {3}", (object)fromCurrency, (object)Currencyvalue, (object)toCurrency, CurrencyConverter.Convert(fromCurrency, toCurrency, Currencyvalue)));
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
-                }
-            }
-            else
+            if (args == null || args.Length.Equals(0))
             {
                 Console.WriteLine("No arguments found to Convert");
+                return;
             }
+            if (args[0].Length > 3)
+            {
+                Console.WriteLine($"Invalid Currency [{args[0]}]");
+                return;
+            }
+            if (args[1].Length > 3)
+            {
+                Console.WriteLine($"Invalid Currency [{args[1]}]");
+                return;
+            }
+            try
+            {
+                Console.WriteLine(CurrencyConverter.Convert(args[0], args[1], Convert.ToDouble(args[2])));
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Enter a valid input!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            Console.ReadLine();
         }
     }
 }
