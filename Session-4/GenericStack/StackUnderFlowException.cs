@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericStack
 {
-    internal class StackUnderFlowException:Exception
+    internal class StackUnderFlowException : Exception
     {
         public StackUnderFlowException() { }
         public StackUnderFlowException(string meassage) : base(meassage) { }
