@@ -1,38 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace BubbleSort.Extensions
 {
     internal static class Extensions
     {
-        public static void BubbleSort<T>(this T[] array) where T : struct,IComparable
+        public static void BubbleSort<T>(this T[] array) where T : struct, IComparable
         {
+            bool flag;
+            if (array.Length.Equals(0))
             {
-                bool flag = false;
-                if (array.Length == 0)
+                return;
+            }
+            for (int temp = 0; temp < array.Length - 1; temp++)
+            {
+                flag = true;
+                for (int index = 0; index < array.Length - 1; index++)
                 {
-   
-                    return;
-                }
-                int num1 = ((IEnumerable<T>)array).Count() - 1;
-                while (!flag)
-                {
-                    flag = true;
-                    for (int index = 0; index < num1; ++index)
+                    if (array[index].CompareTo(array[index + 1]) > 0)
                     {
-
-                        if (array[index].CompareTo(array[index + 1]) > 0)
-                        {
-                            T num2 = array[index];
-                            array[index] = array[index + 1];
-                            array[index + 1] = num2;
-                            flag = false;
-                        }
+                        T num2 = array[index];
+                        array[index] = array[index + 1];
+                        array[index + 1] = num2;
+                        flag = false;
                     }
-                    --num1;
                 }
-
+                if (flag.Equals(true))
+                {
+                    break;
+                }
             }
         }
     }
