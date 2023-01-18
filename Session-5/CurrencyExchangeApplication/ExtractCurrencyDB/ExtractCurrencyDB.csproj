@@ -100,8 +100,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiResponse.cs" />
-    <Compile Include="DbSchema.cs" />
+    <Compile Include="KeyNotFoundException.cs" />
+    <Compile Include="ExchangeRateDBO.cs" />
     <Compile Include="ExtractCurrencyDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
