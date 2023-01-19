@@ -25,14 +25,14 @@ namespace CurrencyExchange
             {
                 return currencyValue;
             }
-            CurrencyExchangeDB DbObject = new CurrencyExchangeDB();
+            CurrencyExchangeDB exchangeRateDB = new CurrencyExchangeDB(ConfigurationManager.AppSettings["ConnString"]);
             try
             {
-                DbObject.ExtractExchangeValue(ConfigurationManager.AppSettings["StandardCurrency"]);
+                exchangeRateDB.GetExchangeRate(ConfigurationManager.AppSettings["StandardCurrency"]);
             }
-            catch (Exception)
+            catch (RecordNotFoundException)
             {
-                DbObject.InsertData(GetApidata());
+                exchangeRateDB.InsertExchangeRates(GetApidata());
             }
             string currencyStamp1 = "INR" + fromCurrency;
             string currencyStamp2 = "INR" + toCurrency;
@@ -42,10 +42,10 @@ namespace CurrencyExchange
             {
                 if (!currencyStamp1.Equals("INRINR"))
                 {   
-                    stamp1CurrencyRate = DbObject.ExtractExchangeValue(currencyStamp1);
+                    stamp1CurrencyRate = exchangeRateDB.GetExchangeRate(currencyStamp1);
                 }
             }
-            catch(Exception)
+            catch(RecordNotFoundException)
             {
                 CurrrencyNotFoundException notFoundException = new CurrrencyNotFoundException($"Currency [{fromCurrency}] invalid.", fromCurrency);
                 throw notFoundException;
@@ -54,20 +54,20 @@ namespace CurrencyExchange
             {
                 if (!currencyStamp2.Equals("INRINR"))
                 {
-                    stamp2CurrencyRate = DbObject.ExtractExchangeValue(currencyStamp2);  
+                    stamp2CurrencyRate = exchangeRateDB.GetExchangeRate(currencyStamp2);  
                 }
             }
-            catch(Exception)
+            catch(RecordNotFoundException)
             {
-                    CurrrencyNotFoundException notFoundException = new CurrrencyNotFoundException($"Currency [{toCurrency}] invalid.", toCurrency);
-                    throw notFoundException;
+                CurrrencyNotFoundException notFoundException = new CurrrencyNotFoundException($"Currency [{toCurrency}] invalid.", toCurrency);
+                throw notFoundException;
             }
             if (toCurrency.Equals("INR"))
             {
                 double currval = stamp1CurrencyRate;
                 return (1.0 / currval * currencyValue);
             }
-            if (fromCurrency.Equals("INR"))
+            else if (fromCurrency.Equals("INR"))
             {
                 double currval = stamp2CurrencyRate;
                 return (currval * currencyValue);

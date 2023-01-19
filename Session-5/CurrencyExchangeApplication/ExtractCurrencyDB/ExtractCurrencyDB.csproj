@@ -100,7 +100,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeyNotFoundException.cs" />
+    <Compile Include="RecordNotFoundException.cs" />
     <Compile Include="ExchangeRateDBO.cs" />
     <Compile Include="ExtractCurrencyDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
