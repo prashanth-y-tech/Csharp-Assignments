@@ -43,15 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardDeckManufacturer.cs" />
     <Compile Include="CardsDeck.cs" />
     <Compile Include="ICard.cs" />
     <Compile Include="InvalidMergeException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RummyCard.cs" />
-    <Compile Include="RummyCardsDeck.cs" />
+    <Compile Include="SortingExtension.cs" />
     <Compile Include="UnoCard.cs" />
-    <Compile Include="UnoCardsDeck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 
 namespace DeckOfCards
 {
@@ -7,26 +7,35 @@ namespace DeckOfCards
     {
         static void Main(string[] args)
         {
+            const string RUMMYCARD = "Rummy Card";
+            const string UNOCARD = "Uno Card";
+
             //Creating objects for 2 cards decks
-            RummyCardsDeck rummyCardsDeck1 = new RummyCardsDeck();
-            UnoCardsDeck unoCardsDeck1= new UnoCardsDeck();
-            //creating decks of 2 types of cards
-            unoCardsDeck1.CreateDeck();
-            rummyCardsDeck1.CreateDeck();
+
+            CardsDeck rummyDeck = CardDeckManufacturer.GetDeck(RUMMYCARD);
+            CardsDeck unoDeck = CardDeckManufacturer.GetDeck(UNOCARD);
+
             //shuffling the card decks
-            unoCardsDeck1.ShuffleDeck();
-            rummyCardsDeck1.ShuffleDeck();
+
+            unoDeck.Shuffle();
+            rummyDeck.Shuffle();
+
             //sorting the card decks
-            unoCardsDeck1.SortDeck();
-            rummyCardsDeck1.SortDeck();
+
+            unoDeck.Sort();
+            rummyDeck.Sort();
+
             //Getting the top element of the decks of cards
-            Console.WriteLine(unoCardsDeck1.GetTopCard().GetCardName());
-            Console.WriteLine(rummyCardsDeck1.GetTopCard().GetCardName());
+
+            Console.WriteLine(unoDeck.GetTopCard().GetCardName());
+            Console.WriteLine(rummyDeck.GetTopCard().GetCardName());
+
             //Combining the decks of cards
+
             try
             {
-                unoCardsDeck1.CombineDecks(rummyCardsDeck1.cardsDeck);
-                foreach (RummyCard card in rummyCardsDeck1.cardsDeck)
+                var x = rummyDeck + unoDeck;
+                foreach (RummyCard card in x.DisplayDeck())
                 {
                     Console.WriteLine(card.GetCardName());
                 }
