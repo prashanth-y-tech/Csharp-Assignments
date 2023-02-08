@@ -31,9 +31,9 @@ namespace DeckOfCards
     };
     public class UnoCard : ICard
     {
-        public string Suit { get; set; }
-        public string Rank { get; set; }
-        public UnoCard(string suit, string rank)
+        UnoSuits Suit { get; set; }
+        UnoRanks Rank { get; set; }
+        public UnoCard(UnoSuits suit, UnoRanks rank)
         {
             this.Suit = suit;
             this.Rank = rank;

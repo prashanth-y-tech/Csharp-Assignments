@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 
 namespace DeckOfCards
 {
@@ -27,10 +27,10 @@ namespace DeckOfCards
     };
     public class RummyCard : ICard
     {
-        public string Suit { get; set; }
-        public string Rank { get; set; }
+        public Enum Suit { get; set; }
+        public Enum Rank { get; set; }
 
-        public RummyCard(string suit, string rank)
+        public RummyCard(Enum suit, Enum rank)
         {
             this.Suit = suit;
             this.Rank = rank; 
